@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | MySpace Personal Portfolio</title>
+  <meta name="description" content="Curated creative works, photography, and design highlights by Joshua.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="site" class="site">
+    <!-- Navbar -->
+    <header class="navbar">
+      <a class="nav-logo" href="index.html"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <span id="welcomeUser">Hello!</span>
+        <button id="logoutBtn" class="logout-btn">Log out ↗</button>
+      </div>
+    </header>
+
+    <!-- Gallery Page Hero & Grid -->
+    <main class="section-wrap" style="padding-top: 50px; padding-bottom: 100px;">
+      <div class="page-hero">
+        <p class="eyebrow">04 / CREATIVE SHOWCASE</p>
+        <h1>Visual works &amp;<br><span class="gradient-text">curated gallery.</span></h1>
+        <p class="hero-description">A collection of photography, design concepts, and creative highlights.</p>
+        <div class="gallery-admin-badge" style="margin-top: 20px;">
+          <span>Admin Mode</span>
+        </div>
+        <div class="gallery-filter" id="galleryFilter">
+          <!-- Populated by src/gallery.js -->
+        </div>
+      </div>
+
+      <div class="gallery-container" style="margin-top: 40px;">
+        <!-- ADMIN NOTE: To modify, add, or delete gallery photos, edit GALLERY_ITEMS in src/gallery.js -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Populated by src/gallery.js -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a class="nav-logo" href="index.html"></a>
+      <p>Patrick Lavega. © 2026</p>
+      <a href="gallery.html">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <!-- Gallery Lightbox Modal -->
+  <div id="galleryModal" class="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="gallery-modal-content">
+      <button id="closeModalBtn" class="gallery-modal-close" type="button" aria-label="Close modal">&times;</button>
+      <img id="modalImg" class="gallery-modal-img" src="" alt="Gallery preview">
+      <div class="gallery-modal-details">
+        <span id="modalCategory" class="gallery-modal-category">CATEGORY</span>
+        <h3 id="modalTitle" class="gallery-modal-title">Artwork Title</h3>
+        <p id="modalDesc" class="gallery-modal-desc">Artwork description</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+  <script type="module" src="/src/gallery.js"></script>
+</body>
+</html>

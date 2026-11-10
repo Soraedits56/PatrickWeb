@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal portfolio website.">
+  <title>MySpace | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="authScreen" class="auth-screen">
+    <section class="auth-visual">
+      <div class="visual-top"><span class="brand-mark">M.</span><span>PERSONAL PORTFOLIO</span></div>
+      <div class="visual-copy">
+        <p class="eyebrow">WELCOME TO MY WORLD</p>
+        <h1>Ideas become<br><span>something real.</span></h1>
+        <p>A little space for my interests, creativity, projects, and everything I'm working toward.</p>
+      </div>
+      <div class="visual-bottom"><span>DESIGN · CODE · CREATE</span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-box">
+        <div class="mobile-brand"><span class="brand-mark">M.</span> MYSPACE</div>
+        <div class="auth-heading">
+          <p class="eyebrow" id="formEyebrow">YOUR PERSONAL SPACE</p>
+          <h2 id="formTitle">Welcome back.</h2>
+          <p id="formSubtitle">Sign in to explore my personal website.</p>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+          <label for="loginEmail">Email address</label>
+          <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="loginPassword">Password</label>
+          <div class="password-wrap">
+            <input id="loginPassword" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="6">
+            <button class="show-password" type="button" data-target="loginPassword">Show</button>
+          </div>
+          <button class="primary-btn" type="submit">Sign in <span>→</span></button>
+          <p class="form-message" id="loginMessage" aria-live="polite"></p>
+          <p class="switch-text">New here? <button type="button" class="text-btn" id="showSignup">Create an account</button></p>
+        </form>
+
+        <form id="signupForm" class="auth-form hidden">
+          <label for="signupName">Your name</label>
+          <input id="signupName" type="text" placeholder="Enter your name" autocomplete="name" required>
+          <label for="signupEmail">Email address</label>
+          <input id="signupEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="signupPassword">Create password</label>
+          <div class="password-wrap">
+            <input id="signupPassword" type="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required>
+            <button class="show-password" type="button" data-target="signupPassword">Show</button>
+          </div>
+          <button class="primary-btn" type="submit">Create account <span>→</span></button>
+          <p class="form-message" id="signupMessage" aria-live="polite"></p>
+          <p class="switch-text">Already have an account? <button type="button" class="text-btn" id="showLogin">Sign in</button></p>
+        </form>
+        <p class="auth-note">Demo sign-in · Your account is stored only in this browser.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site" class="site hidden">
+    <header class="navbar">
+      <a class="nav-logo" href="#home">M<span>.</span></a>
+      <nav>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#interests">Interests</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-right"><span id="welcomeUser">Hello!</span><button id="logoutBtn" class="logout-btn">Log out ↗</button></div>
+    </header>
+
+    <section id="home" class="hero section-wrap">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> A WORK IN PROGRESS</p>
+        <h1>Hey, I'm <span class="gradient-text">Joshua.</span><br>Welcome to my<br>corner of the internet.</h1>
+        <p class="hero-description">I'm a student, a curious creator, and someone who enjoys turning ideas into digital experiences. This is where I share a little about who I am.</p>
+        <div class="hero-actions"><a class="primary-btn link-btn" href="#about">Discover my story <span>→</span></a><a class="secondary-btn" href="#projects">Explore projects</a></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-icon">J.</div>
+          <p class="card-label">CURRENTLY EXPLORING</p>
+          <h3>Code. Create.<br>Keep learning.</h3>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <span class="floating-chip chip-one">✦ Creative mind</span><span class="floating-chip chip-two">⌘ Building ideas</span>
+      </div>
+    </section>
+
+    <section id="about" class="content-section section-wrap">
+      <div class="section-heading"><p class="eyebrow">01 / A LITTLE INTRODUCTION</p><h2>More than just<br><span class="gradient-text">a username.</span></h2></div>
+      <div class="about-copy"><p class="large-copy">I'm someone who enjoys learning new things, exploring technology, and expressing creativity in different ways.</p><p>I'm interested in web development and building websites that look good and work smoothly. Outside of coding, I enjoy music and band activities, gaming, cars, and chess. I'm always looking for opportunities to improve, experiment, and take on new challenges.</p><p class="muted">This page is a personal introduction. Feel free to edit the text, add your own photos, and make it yours.</p></div>
+    </section>
+
+    <section id="interests" class="content-section section-wrap interests-section">
+      <div class="section-heading"><p class="eyebrow">02 / WHAT I ENJOY</p><h2>Things that keep<br><span class="gradient-text">me inspired.</span></h2></div>
+      <div class="interest-grid">
+        <article class="interest-card"><span class="interest-icon">⌨</span><h3>Technology & Code</h3><p>Exploring web technologies and learning how to build useful, modern websites.</p><span class="card-number">01</span></article>
+        <article class="interest-card"><span class="interest-icon">♫</span><h3>Music & Band</h3><p>Enjoying music, performances, and the teamwork behind every great presentation.</p><span class="card-number">02</span></article>
+        <article class="interest-card"><span class="interest-icon">♜</span><h3>Chess & Gaming</h3><p>Playing strategy games, thinking ahead, and challenging myself to improve.</p><span class="card-number">03</span></article>
+        <article class="interest-card"><span class="interest-icon">✧</span><h3>Cars & Creativity</h3><p>Appreciating automotive design, performance, and creative digital projects.</p><span class="card-number">04</span></article>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section section-wrap projects-section">
+      <div class="section-heading"><p class="eyebrow">03 / WHAT I'M BUILDING</p><h2>Learning by<br><span class="gradient-text">making things.</span></h2></div>
+      <div class="project-list">
+        <article class="project-row"><div><span class="project-type">WEB DEVELOPMENT</span><h3>Personal Portfolio</h3><p>A place to introduce myself and showcase my interests.</p></div><span class="project-arrow">↗</span></article>
+        <article class="project-row"><div><span class="project-type">WEB SYSTEM</span><h3>Studio Booking System</h3><p>A booking and reservation management concept for a photography studio.</p></div><span class="project-arrow">↗</span></article>
+        <article class="project-row"><div><span class="project-type">CREATIVE PROJECT</span><h3>Obsidian Rides</h3><p>An automotive-themed website inspired by performance and JDM culture.</p></div><span class="project-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-wrap">
+      <p class="eyebrow">04 / LET'S CONNECT</p><h2>Every great idea<br>starts with a <span class="gradient-text">hello.</span></h2>
+      <p>Have a project, an idea, or just want to connect? Feel free to reach out.</p>
+      <a class="primary-btn link-btn" href="mailto:hello@example.com">Send me an email <span>↗</span></a>
+    </section>
+    <footer><a class="nav-logo" href="#home">M<span>.</span></a><p>Designed as a little corner of the internet. © 2026</p><a href="#home">Back to top ↑</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

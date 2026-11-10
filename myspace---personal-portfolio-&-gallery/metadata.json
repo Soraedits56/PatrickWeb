@@ -1,0 +1,6 @@
+{
+  "name": "MySpace - Personal Portfolio & Gallery",
+  "description": "A personal portfolio and curated visual gallery with account authentication and creative showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

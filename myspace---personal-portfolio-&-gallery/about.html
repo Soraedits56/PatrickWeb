@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | MySpace Personal Portfolio</title>
+  <meta name="description" content="Learn more about Joshua - web development, music, chess, and creative interests.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="site" class="site">
+    <!-- Navbar -->
+    <header class="navbar">
+      <a class="nav-logo" href="index.html"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <span id="welcomeUser">Hello!</span>
+        <button id="logoutBtn" class="logout-btn">Log out ↗</button>
+      </div>
+    </header>
+
+    <!-- About Page Content -->
+    <main class="content-section section-wrap" style="min-height: calc(100vh - 160px); border-top: none; align-items: start; padding-top: 80px;">
+      <div class="section-heading">
+        <p class="eyebrow">01 / A LITTLE INTRODUCTION</p>
+        <h2>More than just<br><span class="gradient-text">a username.</span></h2>
+        <div style="margin-top: 32px;">
+          <a class="primary-btn link-btn" href="interests.html">Explore my interests <span>→</span></a>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="large-copy">I'm someone who enjoys learning new things, exploring technology, and expressing creativity in different ways.</p>
+        <p>I'm interested in web development and building websites that look good and work smoothly. Outside of coding, I enjoy listening to music and band dancing alone, gaming, selfies, and hanging out with my classmates. I'm always looking for opportunities to improve, experiment, and take on new challenges.</p>
+        <p class="muted">This page is a personal introduction. Feel free to edit the text, add your own photos, and make it yours.</p>
+        <div style="margin-top: 36px; padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: #101625;">
+          <p class="eyebrow" style="margin-bottom: 8px;">CORE PASSIONS</p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px;">
+            <span style="font-size: 0.8rem; padding: 6px 12px; border-radius: 20px; background: rgba(255,255,255,0.06); color: #c7cce0;">Web Development</span>
+            <span style="font-size: 0.8rem; padding: 6px 12px; border-radius: 20px; background: rgba(255,255,255,0.06); color: #c7cce0;">Listening to Music</span>
+            <span style="font-size: 0.8rem; padding: 6px 12px; border-radius: 20px; background: rgba(255,255,255,0.06); color: #c7cce0;">Looks</span>
+            <span style="font-size: 0.8rem; padding: 6px 12px; border-radius: 20px; background: rgba(255,255,255,0.06); color: #c7cce0;">Dancing</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a class="nav-logo" href="index.html"></a>
+      <p>Patrick Lavega. © 2026</p>
+      <a href="about.html">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>

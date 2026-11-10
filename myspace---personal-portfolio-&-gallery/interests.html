@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interests | MySpace Personal Portfolio</title>
+  <meta name="description" content="Discover Joshua's interests - technology, coding, music, gaming, and automotive design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="site" class="site">
+    <!-- Navbar -->
+    <header class="navbar">
+      <a class="nav-logo" href="index.html"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html" class="active">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <span id="welcomeUser">Hello!</span>
+        <button id="logoutBtn" class="logout-btn">Log out ↗</button>
+      </div>
+    </header>
+
+    <!-- Interests Page Content -->
+    <main class="content-section section-wrap interests-section" style="min-height: calc(100vh - 160px); border-top: none; align-items: start; padding-top: 80px;">
+      <div class="section-heading">
+        <p class="eyebrow">02 / WHAT I ENJOY</p>
+        <h2>Things that keep<br><span class="gradient-text">me inspired.</span></h2>
+        <p class="section-subtext">Exploring multidisciplinary passions ranging from lines of code to musical rhythm and strategic play.</p>
+        <div style="margin-top: 32px;">
+          <a class="primary-btn link-btn" href="projects.html">Explore projects <span>→</span></a>
+        </div>
+      </div>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <span class="interest-icon">⌨</span>
+          <h3>Technology &amp; Code</h3>
+          <p>Exploring web technologies and learning how to build useful, modern websites.</p>
+          <span class="card-number">01</span>
+        </article>
+        <article class="interest-card">
+          <span class="interest-icon">♫</span>
+          <h3>Music</h3>
+          <p>Enjoying listening to old music.</p>
+          <span class="card-number">02</span>
+        </article>
+        <article class="interest-card">
+          <span class="interest-icon">🎮</span>
+          <h3>Moba Gaming</h3>
+          <p>Playing role playing games, thinking ahead, and challenging myself to improve.</p>
+          <span class="card-number">03</span>
+        </article>
+        <article class="interest-card">
+          <span class="interest-icon">✧</span>
+          <h3>Looking good</h3>
+          <p>Appreciating style, fashion, and the confidence that comes with it.</p>
+          <span class="card-number">04</span>
+        </article>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a class="nav-logo" href="index.html"></a>
+      <p>Patrick Lavega. © 2026</p>
+      <a href="interests.html">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>

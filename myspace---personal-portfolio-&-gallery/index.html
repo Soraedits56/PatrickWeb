@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySpace | Personal Portfolio &amp; Gallery</title>
+  <meta name="description" content="A personal portfolio and curated visual gallery with account authentication and creative showcase.">
+  <meta property="og:title" content="MySpace | Personal Portfolio &amp; Gallery">
+  <meta property="og:description" content="A personal portfolio and curated visual gallery with account authentication and creative showcase.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <!-- Authentication screen -->
+  <main id="authScreen" class="auth-screen">
+    <section class="auth-visual">
+      <div class="visual-top"><span class="brand-mark"></span><span>PERSONAL PORTFOLIO</span></div>
+      <div class="visual-copy">
+        <p class="eyebrow">WELCOME TO MY WORLD</p>
+        <h1>Ideas become<br><span>something real.</span></h1>
+        <p>A little space for my interests, creativity, projects, and everything I'm working toward.</p>
+      </div>
+      <div class="visual-bottom"><span>DESIGN · CODE · CREATE</span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-box">
+        <div class="mobile-brand"><span class="brand-mark">M.</span> MYSPACE</div>
+        <div class="auth-heading">
+          <p class="eyebrow" id="formEyebrow">YOUR PERSONAL SPACE</p>
+          <h2 id="formTitle">Welcome back.</h2>
+          <p id="formSubtitle">Sign in to explore my personal website.</p>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+          <label for="loginEmail">Email address</label>
+          <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="loginPassword">Password</label>
+          <div class="password-wrap">
+            <input id="loginPassword" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="6">
+            <button class="show-password" type="button" data-target="loginPassword">Show</button>
+          </div>
+          <button class="primary-btn" type="submit">Sign in <span>→</span></button>
+          <p class="form-message" id="loginMessage" aria-live="polite"></p>
+          <p class="switch-text">New here? <button type="button" class="text-btn" id="showSignup">Create an account</button></p>
+        </form>
+
+        <form id="signupForm" class="auth-form hidden">
+          <label for="signupName">Your name</label>
+          <input id="signupName" type="text" placeholder="Enter your name" autocomplete="name" required>
+          <label for="signupEmail">Email address</label>
+          <input id="signupEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="signupPassword">Create password</label>
+          <div class="password-wrap">
+            <input id="signupPassword" type="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required>
+            <button class="show-password" type="button" data-target="signupPassword">Show</button>
+          </div>
+          <button class="primary-btn" type="submit">Create account <span>→</span></button>
+          <p class="form-message" id="signupMessage" aria-live="polite"></p>
+          <p class="switch-text">Already have an account? <button type="button" class="text-btn" id="showLogin">Sign in</button></p>
+        </form>
+        <p class="auth-note">Demo sign-in · Your account is stored only in this browser.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Portfolio, shown after sign in -->
+  <div id="site" class="site hidden">
+    <!-- Navbar with links to separate page files -->
+    <header class="navbar">
+      <a class="nav-logo" href="index.html"></a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <span id="welcomeUser">Hello!</span>
+        <button id="logoutBtn" class="logout-btn">Log out ↗</button>
+      </div>
+    </header>
+
+    <!-- Home Hero Section -->
+    <section id="home" class="hero section-wrap">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> A WORK IN PROGRESS</p>
+        <h1>Hey, I'm <span class="gradient-text">Patrick.</span><br>Welcome to my<br>corner of the internet.</h1>
+        <p class="hero-description">I'm a student, a curious creator, and someone who enjoys turning ideas into digital experiences. This is where I share a little about who I am.</p>
+        <div class="hero-actions">
+          <a class="primary-btn link-btn" href="about.html">Discover my story <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-icon">P.</div>
+          <p class="card-label">CURRENTLY EXPLORING</p>
+          <h3>Code. Create.<br>Keep learning.</h3>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <span class="floating-chip chip-one">✦ Creative mind</span>
+        <span class="floating-chip chip-two">⌘ Building ideas</span>
+      </div>
+    </section>
+
+    <!-- Overview / Page Navigator Section -->
+    <section class="content-section section-wrap" style="background: #0c1120;">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE MY SPACE</p>
+        <h2>Navigate through<br><span class="gradient-text">every chapter.</span></h2>
+        <p class="section-subtext">Each page showcases a different dimension of my journey, learning, and passions.</p>
+      </div>
+      <div class="interest-grid">
+        <a href="about.html" class="interest-card" style="display: block;">
+          <span class="interest-icon">✦</span>
+          <h3>About Me</h3>
+          <p>Read about my background, and creative motivation.</p>
+          <span class="card-number">01</span>
+          <span style="display: inline-block; margin-top: 15px; font-size: 0.8rem; color: var(--cyan); font-weight: 600;">Open page ↗</span>
+        </a>
+        <a href="interests.html" class="interest-card" style="display: block;">
+          <span class="interest-icon">⌨</span>
+          <h3>My Interests</h3>
+          <p>Explore coding, brass &amp; band music, strategic chess, and automotive styling.</p>
+          <span class="card-number">02</span>
+          <span style="display: inline-block; margin-top: 15px; font-size: 0.8rem; color: var(--cyan); font-weight: 600;">Open page ↗</span>
+        </a>
+        <a href="projects.html" class="interest-card" style="display: block;">
+          <span class="interest-icon">⌘</span>
+          <h3>Projects</h3>
+          <p>Discover web development apps, and creative builds.</p>
+          <span class="card-number">03</span>
+          <span style="display: inline-block; margin-top: 15px; font-size: 0.8rem; color: var(--cyan); font-weight: 600;">Open page ↗</span>
+        </a>
+        <a href="gallery.html" class="interest-card" style="display: block;">
+          <span class="interest-icon">✧</span>
+          <h3>Visual Gallery</h3>
+          <p>Browse photography, sunset aesthetics, and curated artworks.</p>
+          <span class="card-number">04</span>
+          <span style="display: inline-block; margin-top: 15px; font-size: 0.8rem; color: var(--cyan); font-weight: 600;">Open page ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a class="nav-logo" href="index.html"></a>
+      <p>Patrick Lavega. © 2026</p>
+      <a href="index.html">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>

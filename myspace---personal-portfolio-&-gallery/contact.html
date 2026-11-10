@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | MySpace Personal Portfolio</title>
+  <meta name="description" content="Connect with Joshua - reach out for projects, collaborations, or questions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="site" class="site">
+    <!-- Navbar -->
+    <header class="navbar">
+      <a class="nav-logo" href="index.html"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <span id="welcomeUser">Hello!</span>
+        <button id="logoutBtn" class="logout-btn">Log out ↗</button>
+      </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <main class="contact-section section-wrap" style="min-height: calc(100vh - 160px); border-top: none; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 60px; padding-bottom: 90px;">
+      <p class="eyebrow">05 / LET'S CONNECT</p>
+      <h2>Every great idea<br>starts with a <span class="gradient-text">hello.</span></h2>
+      <p style="max-width: 500px; margin: 20px auto 30px;">Have a project, an idea, or just want to connect? Feel free to reach out anytime.</p>
+      <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
+        <a class="primary-btn link-btn" href="mailto:hello@example.com">Send me an email <span>↗</span></a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a class="nav-logo" href="index.html"></a>
+      <p>Patrick Lavega. © 2026</p>
+      <a href="contact.html">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>

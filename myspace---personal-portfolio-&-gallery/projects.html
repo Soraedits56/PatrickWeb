@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | MySpace Personal Portfolio</title>
+  <meta name="description" content="Explore web applications and creative projects built by Joshua.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="site" class="site">
+    <!-- Navbar -->
+    <header class="navbar">
+      <a class="nav-logo" href="index.html"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <span id="welcomeUser">Hello!</span>
+        <button id="logoutBtn" class="logout-btn">Log out ↗</button>
+      </div>
+    </header>
+
+    <!-- Projects Page Content -->
+    <main class="content-section section-wrap projects-section" style="min-height: calc(100vh - 160px); border-top: none; align-items: start; padding-top: 80px;">
+      <div class="section-heading">
+        <p class="eyebrow">03 / WHAT I'M BUILDING</p>
+        <h2>Learning by<br><span class="gradient-text">making things.</span></h2>
+        <p class="section-subtext">Hands-on applications, user interfaces, and systems developed with curiosity and care.</p>
+        <div style="margin-top: 32px;">
+          <a class="primary-btn link-btn" href="gallery.html">View creative gallery <span>→</span></a>
+        </div>
+      </div>
+      <div class="project-list">
+        <article class="project-row">
+          <div>
+            <span class="project-type">WEB DEVELOPMENT</span>
+            <h3>Personal Portfolio</h3>
+            <p>A place to introduce myself and showcase my interests, works, and journey.</p>
+          </div>
+          <span class="project-arrow">↗</span>
+        </article>
+        <article class="project-row">
+          <div>
+            <span class="project-type">CREATIVE PROJECT</span>
+            <h3>Website About Me</h3>
+            <p>A simple yet elegant website to share my story and experiences.</p>
+          </div>
+          <span class="project-arrow">↗</span>
+        </article>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a class="nav-logo" href="index.html"></a>
+      <p>Patrick Lavega. © 2026</p>
+      <a href="projects.html">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>

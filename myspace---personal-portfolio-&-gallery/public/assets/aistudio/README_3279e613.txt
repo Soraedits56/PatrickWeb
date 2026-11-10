@@ -1,0 +1,17 @@
+MYSPACE PERSONAL WEBSITE
+
+Files:
+- index.html : page structure, login/sign-up forms, and portfolio content
+- style.css  : responsive styling
+- script.js  : demo account registration, sign-in, session, and logout
+
+HOW TO RUN:
+1. Extract the ZIP file.
+2. Keep all three files in the same folder.
+3. Double-click index.html to open it in a browser.
+4. Choose "Create an account", register with an email and password, then sign in.
+
+IMPORTANT:
+This is a front-end demonstration only. It stores account details in browser localStorage
+and is NOT secure for real users or production websites. For a real authentication system,
+use a server-side backend and securely hashed passwords.
